@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aizhan Shapilova](https://up.htmlacademy.ru/htmlcss/35/user/486491).
-* Наставник: `Максим Ворожцов`.
+* Наставник: [Максим Ворожцов](https://htmlacademy.ru/profile/id485797).
 
 ---
 
