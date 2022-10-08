@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title class="visually-hidden">HTML Academy: Седона</title>
+    <title class="visually-hidden">HTML Academy: Седона - каталог</title>
+    <link href="style/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a href="https://htmlacademy.ru/">
-        <img src="img/logo-headeer.svg" alt="Логотип сайта">
+        <img src="images/logo-headeer.svg" width="140" height="70" alt="Логотип сайта">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -56,7 +57,7 @@
             <a class="breadcrumbs-link vissualy-hidden" href="index.html">Главная</a>
           </li>
           <li>
-            <img src="img/icon-breadcrumbs.svg" alt="">
+            <img src="images/icon-breadcrumbs.svg" alt="">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостницы</a>
@@ -92,10 +93,12 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label catalog-filter-form>
+            <label class="catalog-filter-form">
               <input type="text" value="0" placeholder="от">
             </label>
-            <input type="text" value="9000" placeholder="до">
+            <label class="catalog-filter-form">
+              <input type="text" value="9000" placeholder="до">
+            </label>
           </fieldset>
           <button class="search-sorting-button-apply button" type="submit">Применить</button>
           <button class="search-sorting-button-reset button" type="reset">Сбросить</button>
@@ -111,15 +114,15 @@
         </select>
         <div class="view">
           <a href="#" class="view-card">
-            <img src="img/view-card-ikon.svg">
+            <img src="images/view-card-ikon.svg" width="16" height="14">
             <span class="visually-hidden">Показать карточки</span>
           </a>
           <a href="#" class="view-deployed">
-            <img src="img/view-deployed-ikon.svg">
+            <img src="images/view-deployed-ikon.svg" width="16" height="14">
             <span class="visually-hidden">Показать развёрнуто</span>
           </a>
           <a href="#" class="view-list">
-            <img src="img/view-list-ikon.svg">
+            <img src="images/view-list-ikon.svg" width="16" height="14">
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
@@ -129,7 +132,7 @@
         <ol class="hotel-list">
           <li class="hotel-card">
             <a class="product-card-link" href="#">
-              <img class="hotel-card-img" src="img/hotel-1.jpg" alt="ночное небо и каньон ">
+              <img class="hotel-card-img" src="images/hotel-1.jpg" width="300" height="212" alt="ночное небо и каньон ">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="hotel-card-price">Гостиница</p>
@@ -142,7 +145,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="img/hotel-2.jpg" alt="горы на фоне вечернего неба и радуги">
+              <img class="hotel-card-img" src="images/hotel-2.jpg" width="300" height="212" alt="горы на фоне вечернего неба и радуги">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="hotel-card-price">Гостиница</p>
@@ -155,7 +158,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="img/hotel-3.jpg" alt="">
+              <img class="hotel-card-img" width="300" height="212" src="images/hotel-3.jpg" alt="">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <p class="hotel-card-price">Гостиница</p>
@@ -168,7 +171,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="img/hotel-4.jpg" alt="">
+              <img class="hotel-card-img" src="images/hotel-4.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <p class="hotel-card-price">Гостиница</p>
@@ -217,24 +220,24 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://vk.com/htmlacademy" target="_blank">
-            <img src="img/logo-vk.svg" alt="vk">
+            <img src="images/logo-vk.svg" width="25" height="15" alt="vk">
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button" href="https://t.me/htmlacademy" target="_blank">
-            <img src="img/logo-telegram.svg" alt="telegram">
+            <img src="images/logo-telegram.svg" width="18" height="16" alt="telegram">
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-            <img src="img/logo-youtube.svg" alt="youtube">
+          <a class="visually-hidden button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <img src="images/logo-youtube.svg" width="23" height="18" alt="youtube">
           </a>
         </li>
       </ul>
-      <adress class="contacts-phone">
+      <address class="contacts-phone">
         <a class="contacts-phone-number" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-      </adress>
-      <img src="img/logo.svg" alt="лого html academy">
+      </address>
+      <img src="images/logo.svg" width="115" height="34" alt="лого html academy">
     </footer>
   </body>
 </html>
