@@ -1,0 +1,28 @@
+.advantages {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../img/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.advantages-description-title {
+  color: black;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  }
+
+. advantages-description-item {
+  color: black;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
