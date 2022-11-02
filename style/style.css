@@ -14,20 +14,15 @@
   font-display: swap;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+html {
+  height: 100%;
 }
 
-.container {
+.visually-hidden {
+  display: none;
+}
+
+.page-container {
   width: 1200px;
   max-width: 1200px;
   margin: 0 auto;
@@ -39,6 +34,9 @@ body {
   font-weight: 400;
   color: black;
   background-color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
@@ -53,6 +51,38 @@ body {
 .main-header {
   color: black;
   background-color: white;
+  display: flex;
+}
+
+.main-container {
+   flex-grow: 1;
+}
+
+.header-logo {
+  margin-left: 70px;
+  margin-right: 44px;
+}
+
+.navigation {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.navigation li {
+  display: inline;
+  justify-content: space-between;
 }
 
 .navigation-link {
@@ -60,6 +90,7 @@ body {
   font-weight: 700;
   color: black;
   text-decoration: none;
+  margin-right: 32px;
 }
 
 .button-want-here {
@@ -69,28 +100,30 @@ body {
   font-weight: 700;
   padding: 8px 50px;
   line-height: 20px;
+  margin-right: 70px;
 }
 
-.advantages {
+.hero {
   background: url("../images/index-background.jpg") #82B3D3 no-repeat;
   background-size: 100% auto;
-  text-align: center;
 }
 
-.advantages-img {
+.hero-img {
   display: block;
+  margin: 0 auto;
 }
 
-.advantages-img-divider {
+.hero-img-divider {
   display: block;
+  margin: 0 auto;
 }
 
-.advantages-description {
+.hero-description {
   padding: 30px;
   margin: 30px 0;
 }
 
-.advantages-description-title {
+.hero-description-title {
   text-transform: uppercase;
   color: black;
   font-style: normal;
@@ -98,18 +131,36 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  }
+}
+
+.advantages-town {
+  display: flex;
+  margin-right: auto;
+}
+
+.advantages-bridge {
+  display: flex;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  margin: auto;
+  text-align: center;
+  width: 400px;
+  height: 384px;
+}
 
 .advantages-description-item {
   color: black;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-}
-
-.advantages-item {
-  margin: auto;
   text-align: center;
 }
 
@@ -168,21 +219,43 @@ body {
   text-align: center;
 }
 
+.main-catalog {
+  display: flex;
+}
 .search {
   background: url("../images/catalog-background.jpg")#82B3D3 no-repeat;
+  height: 412px;
   background-size: 100% auto;
 }
 
 .search h1 {
+  margin-top: 0;
+  padding-top: 35px;
+  padding-left: 70px;
   color: white;
   font-size: 60px;
   font-weight: 700;
 }
 
 .breadcrumbs {
+  display: flex;
+  padding-top: 8px;
+  padding-left: 70px;
+  padding-bottom: 40px;
   color: white;
   font-size: 16px;
   font-weight: 700;
+}
+
+.filter-container{
+  display: inline-block;
+  width: 151px;
+  margin: 0 70px;
+}
+
+.filter-container-price {
+  display: inline-block;
+  width: 288px;
 }
 
 .catalog-filter-group {
@@ -195,6 +268,9 @@ body {
 }
 
 .catalog-filter-item {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
   font-size: 18px;
   font-weight: 400;
 }
@@ -206,8 +282,36 @@ body {
 }
 
 .sorting-container {
+  display: flex;
   color: black;
   background-color: white;
+}
+
+.sorting-result {
+  margin-left: 70px;
+  font-weight: 700;
+  size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.sorting-select {
+  margin: 0 auto;
+}
+
+.sorting-view {
+  margin-right: 70px;
+}
+
+.hotel-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 340px;
+  padding: 20px;
 }
 
 .hotel-card-title {
@@ -265,6 +369,7 @@ body {
   background: url("../images/subscribe.jpg") #82B3D3 no-repeat;
   background-size: 100% auto;
   text-align: center;
+  padding: 96px 258px 104px 258px;
 }
 
 .button-subscribe {
@@ -285,8 +390,13 @@ body {
   text-align: center;
 }
 
-.search-button {
+.search-hotel {
+  padding: 96px 304px 96px 304px;
+}
 
+.search-button {
+  background-color: #756157;
+  padding: 8px 50px 8px 50px;
 }
 
 .page-footer {
@@ -301,3 +411,22 @@ body {
   text-decoration: none;
 }
 
+.footer-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  width: 155px;
+  margin-right: auto;
+}
+
+.footer-phone {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 115px;
+  margin-left: auto;
+}
